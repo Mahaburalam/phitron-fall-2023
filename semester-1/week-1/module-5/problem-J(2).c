@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main()
 {
+    //J. Multiples
     int a ,b;
     scanf("%d %d", &a, &b);
 
