@@ -15,10 +15,17 @@ int main()
     int position, value;
     scanf("%d %d", &position, &value);
 
-    for(int i = n; i >= n+1; i--)
+    // swap array value
+    for(int i = n; i >= position+1; i--)
     {
         arr[i] = arr[i-1];
-        printf("%d", arr[i]);
+        //printf("%d", arr[i]);
+    }
+    arr[position] = value;
+
+    for(int i = 0; i <= n; i++)
+    {
+        printf("%d ", arr[i]);
     }
 
     return 0;
